@@ -1,0 +1,10 @@
+.bandas {
+    display:flex;
+    max-width: 90vw;
+    margin: 10px 10px 10px 10px;
+}
+
+.bandas__banda{
+    display:flex;
+    flex-direction:column;
+}
