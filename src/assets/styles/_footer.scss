@@ -1,17 +1,41 @@
+@import "mixins";
+
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-    max-width: 90vw;
-    margin: 0 5vh 0 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  width: 90vw;
+  margin: 0 5vh 0 5vh;
+}
 
-  }
+.footer__estatica {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 85vw;
+}
 
-  .footer__redes{
-    display: flex;
-    justify-content: space-between;
-    max-width: 400px;
-  }
+.footer__pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90vw;
+}
+.footer__pie__redes {
+  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+}
+
+.footer__separador {
+  border-top: solid 2px $azul-principal;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  //@include separador;
+  width: 80vw;
+
+}

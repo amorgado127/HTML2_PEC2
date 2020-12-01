@@ -1,5 +1,8 @@
 .bandas {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 250px;
     max-width: 90vw;
     margin: 10px 10px 10px 10px;
 }
