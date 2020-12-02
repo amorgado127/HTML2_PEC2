@@ -1,13 +1,35 @@
 .bandas {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1 250px;
-    max-width: 90vw;
-    margin: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 10px 10px 10px 10px;
 }
 
-.bandas__banda{
-    display:flex;
-    flex-direction:column;
+.bandas__banda {
+  background-color: $gris-personal;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 18vw;
+  margin: 20px;
+}
+
+.bandas__banda__imagen {
+  margin: 5px auto;
+}
+
+.bandas__banda__nombre{
+    margin: 5px;
+}
+
+.bandas__banda__estilo{
+    margin: 5px;
+}
+
+.bandas__banda__datos{
+    margin: 5px;
 }
