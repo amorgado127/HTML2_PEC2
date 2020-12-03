@@ -1,5 +1,19 @@
 .formulario{
     display:block;
-    max-width: 60vh;
+    width: 40vw;
     margin:auto;
+    background-color: $azul-formulario;
+    padding: 30px;
+}
+
+.formulario__form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:20px;
+}
+
+.formulario__form button{
+    width: 10vw;
+    margin: auto;
 }
