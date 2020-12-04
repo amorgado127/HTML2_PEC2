@@ -20,14 +20,14 @@
   margin-top: 20px;
 }
 
-.footer__estatica__mapa{
+.footer__estatica__mapa {
   width: 30vw;
   height: 330px;
-  padding:10px;
+  padding: 10px;
 }
 
-.footer__estatica__titulos{
-  display:flex;
+.footer__estatica__titulos {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -51,4 +51,17 @@
 .footer__separador {
   @include separador;
   width: 40vw;
+}
+
+.footer__licencia {
+  display:flex;
+  width: 55vw;
+  justify-self: baseline;
+}
+
+.footer__licencia img {
+  display: inline;
+  width: 30%;
+  height: auto;
+  margin: 10px;
 }
