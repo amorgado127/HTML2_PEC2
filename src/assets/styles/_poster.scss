@@ -1,9 +1,10 @@
+@import "mixins";
 @supports (display: grid) {
   .poster {
     display: grid;
-    width: 95vw;
-    grid-template-columns: 5% 40% 25% 25% 5%;
-    grid-template-rows: 200px 3% 30% 30% 30% 3% 500px;
+    width: 90vw;
+    grid-template-columns: 5% 30% 30% 20% 10% 5%;
+    grid-template-rows: 200px 3% 30% 30% 30% 2% 500px;
   }
 
   .poster__cabecera {
@@ -21,7 +22,8 @@
   }
 
   .poster__titulo {
-    grid-area: 2/2/3/4;
+    grid-area: 2/3/3/4;
+    margin: auto;
     z-index: 2;
   }
 
@@ -34,30 +36,33 @@
   }
 
   .poster__imagen img {
-    //object-fit: cover;
+    max-width: 85vw;
     height: auto;
-    width: auto;
   }
 
   .poster__imagen1 {
-    grid-area: 5/2/7/3;
+    grid-area: 5/2;
     z-index: 2;
   }
-  .poster__imagen1 img {
 
-max-width:    20vw;
+  .poster__imagen1 img {
+    max-width: 20vw;
   }
+
   .poster__imagen2 {
     grid-area: 4/3/5/4;
     z-index: 2;
   }
-  .poster__imagen2 {
-    height: auto;
-    width: auto;
-  }
+
   .poster__imagen3 {
-    grid-area: 3/4/4/6;
+    padding-left: 20px;
+    grid-area: 3/5;
     z-index: 2;
+  }
+
+  .poster__imagen3 img {
+    max-width: 12vw;
+    height: auto;
   }
 
   .footer__index {
@@ -93,9 +98,7 @@ max-width:    20vw;
   }
 
   .footer__separador {
-    border-top: solid 2px $azul-principal;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    @include separador;
     width: 80vw;
   }
 }

@@ -15,9 +15,25 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: $gris-estatico;
   max-width: 85vw;
+  margin-top: 20px;
 }
 
+.footer__estatica__mapa{
+  width: 30vw;
+  height: 330px;
+  padding:10px;
+}
+
+.footer__estatica__titulos{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .footer__pie {
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +41,7 @@
   align-items: baseline;
   width: 90vw;
 }
+
 .footer__pie__redes {
   display: flex;
   justify-content: space-between;
@@ -32,9 +49,6 @@
 }
 
 .footer__separador {
-  border-top: solid 2px $azul-principal;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 80vw;
-
+  @include separador;
+  width: 40vw;
 }

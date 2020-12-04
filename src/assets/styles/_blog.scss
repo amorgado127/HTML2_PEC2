@@ -1,9 +1,11 @@
+@import "mixins";
+
 .contenedor{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 95vw;
     width: 95vw;
+    margin:auto;
 }
 
 .blog__titulo {
@@ -45,14 +47,14 @@
 .blog__body__articulos1 {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 15px;
 }
 
 .blog__body__articulos2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 5px;
+  margin: 15px;
 }
 
 .blog__body__articulos2 article {
@@ -61,4 +63,9 @@
 
 .blog__body__imagen{
     margin: 20px auto;
+}
+
+.blog__separador{
+  @include separador;
+  width: 40vw;
 }
