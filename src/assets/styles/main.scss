@@ -15,13 +15,13 @@
 // @import "@some-company/some-node-module";
 @import "~bootstrap/scss/bootstrap.scss";
 @import "@fortawesome/fontawesome-free/css/all.css";
+
 /**
  * Import layouts
  * It's a best practice to use a partial for each page
  */
 
 @import "layouts/home";
-
 @import "header";
 @import "footer";
 @import "bandas";
@@ -30,7 +30,99 @@
 @import "blog";
 @import "contenedor";
 
+/***************************************************** */
 
-/**
- * Do NOT include anything else in this file!
- */
+/*   Adapatación responsive de la web                  */
+
+/***************************************************** */
+
+/* Dispositivo movi como máximo 767px */
+@media screen and (max-width: 767px) {
+  .footer__pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__licencia {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__pie__redes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__licencia img {
+    display: block;
+    margin: auto;
+  }
+
+  .footer__estatica__mapa {
+    margin: auto;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  .poster__titulo {
+    grid-area: 2/1/2/4;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .poster__titulo h1 {
+    color: white;
+    font-size: 20px;
+    text-shadow: 5px 5px #558abb;
+  }
+}
+
+/* Dispositivo tablet entre 768px y 991px */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .poster__titulo {
+    grid-area: 2/1/2/4;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .poster__titulo h1 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px #558abb;
+  }
+}
+
+/* Dispositivo portatil entre 992px y 1199px */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .poster__titulo {
+    grid-area: 2/4/4/5;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .poster__titulo h1 {
+    color: white;
+    writing-mode: vertical-lr;
+    font-size: 70px;
+    text-shadow: 5px 5px #558abb;
+  }
+}
+
+// >= 1200px (large desktop)
+@media (min-width: 1200px) {
+  html {
+    font-size: $font-size;
+  }
+}
+
+/* Do NOT include anything else in this file! */

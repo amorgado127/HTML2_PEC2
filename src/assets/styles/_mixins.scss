@@ -1,28 +1,26 @@
-
 // Linea separadora
 
 @mixin separador {
-    border-top: solid 2px $azul-principal;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  border-top: solid 2px $azul-principal;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-@mixin cabecera{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-    max-height: 200px;
+@mixin pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  width: 90vw;
+  margin: 0 5vh 0 5vh;
 }
 
-@mixin pie{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    color: black;
-    width: 90vw;
-    margin: 0 5vh 0 5vh;
+@mixin pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  width: 90vw;
 }

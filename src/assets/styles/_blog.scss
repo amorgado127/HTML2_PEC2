@@ -1,11 +1,11 @@
 @import "mixins";
 
-.contenedor{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 95vw;
-    margin:auto;
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  margin: auto;
 }
 
 .blog__titulo {
@@ -15,7 +15,6 @@
   justify-content: center;
   width: 90vw;
   height: 830px;
-  margin: 0 auto;
   background-image: url("../images/concert-blog.png");
   background-repeat: no-repeat;
   background-size: 90vw 830px;
@@ -61,11 +60,11 @@
   flex-grow: 2;
 }
 
-.blog__body__imagen{
-    margin: 20px auto;
+.blog__body__imagen {
+  margin: 20px auto;
 }
 
-.blog__separador{
+.blog__separador {
   @include separador;
   width: 40vw;
 }

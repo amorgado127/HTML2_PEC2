@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+  font-family: "Montserrat", sans-serif;
   width: 90vw;
-  margin: 0 5vh 0 5vh;
+  color: $color-header;
+  max-height: 200px;
 }
